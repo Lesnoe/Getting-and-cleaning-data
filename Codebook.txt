@@ -1,0 +1,85 @@
+     
+     
+     
+     
+     
+Raw  data :
+    The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+    These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
+    Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+    Similarly, the acceleration signal was then separated into body and gravity acceleration signals 
+    (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.  
+
+
+
+
+Variables Name:                               
+
+tBodyAcc-XYZ                        
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ                      
+fBodyAccJerk-XYZ   
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag   
+Subject
+Activity
+
+Variables Labels
+
+ Prefix 't' to denote time
+ Prefix 'f' to indicate frequency domain signals
+ Body    -  into Body signal
+ Gravity - gravity acceleration  signal
+ Acc     -  acceleration raw signals
+ Gyro    -  gyroscope  raw signals
+ -XYZ   is used to denote 3-axial signals in the X, Y and Z directions.
+ -mean() - Mean Value
+ - std() - standart deviation
+ 
+ Subject :  number  since 1 to 30 Volanters   
+ 
+ Activity:
+   №           the  Name of Activity
+                
+   1            WALKING
+   2            WALKING_UPSTAIRS
+   3            WALKING_DOWNSTAIRS
+   4            SITTING
+   5            STANDING
+   6            LAYING
+  
+  
+
+ 
+Processing  data: read file from directory and create X_test (data.frame)
+read "features.txt" for creating  variable names for X_test. Extracting only "mean"
+and "std"  variables name to new data.frame. Adding  value Activity for test and Subject  for test
+to  the above data.frame. 
+
+The same pul operations makes for  the second part "train" directory.
+ Merging   obtained two data.frame together by row.
+ Assignment  logical Variables names ("Sitting",Walking"...) to order from 1 till 6 to Activity
+ column.  I've got it ,but sometimes is better using numeric value . It can save times,couse of alphabetical 
+ processing   can be longer  hence expensive.
+ Reshape  data.frame by  melt function  and obtain   data.frame  with  mean value  each  variable for 
+ each Subject and  the kind of Activity. 
+ 
+ 
+ 
+ 
