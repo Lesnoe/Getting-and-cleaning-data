@@ -1,9 +1,8 @@
 
-
 ========================================================================
 Script for processing data  Human Activity Recognition Using Smartphones Dataset
 has obtained by Smartlab Company www.smartlab.ws
-
+=========================================================================
 
 Script is using raws data :"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 allows to get independent tidy data set with the average of each variable for each activity and each subject. In this case, variable names
