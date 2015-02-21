@@ -1,4 +1,5 @@
 
+
 ========================================================================
 Script for processing data  Human Activity Recognition Using Smartphones Dataset
 has obtained by Smartlab Company www.smartlab.ws
