@@ -1,5 +1,5 @@
 
-
+#INFORMATION
 ========================================================================
 Script for processing data  Human Activity Recognition Using Smartphones Dataset
 has obtained by Smartlab Company www.smartlab.ws
@@ -23,4 +23,4 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
-# Cleaning
+
